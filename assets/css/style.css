@@ -14,9 +14,75 @@
 /* ============================================================ */
 :root {
   --black: #000000;
-  --white: #ffffff;
+  --lime: #00ff00;
+  --red: #ff0000;
 }
 
 body {
   margin: 0;
+  font-size: 16px;
+  background-color: var(--black);
+}
+
+/* ============================================================ */
+/* ============== MOBILE WITH SMALL SCREEN SIZE =============== */
+/* ============================================================ */
+@media screen and (min-width: 320px) {
+  .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .wrapper__h2 {
+    user-select: none;
+    font-family: "Menlo", "Monaco", "Courier New", "monospace";
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .wrapper__h_color_red {
+    color: var(--red);
+  }
+
+  .wrapper__h2.wrapper__matrix-rain-title {
+    z-index: 1;
+    margin: 6em 0 0 0;
+  }
+
+  .earth {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+/* ============================================================ */
+/* ============== MOBILE WITH MEDIUM SCREEN SIZE ============== */
+/* ============================================================ */
+@media screen and (min-width: 390px) {
+}
+
+/* ============================================================ */
+/* =============== MOBILE WITH LARGE SCREEN SIZE ============== */
+/* ============================================================ */
+@media screen and (min-width: 428px) {
+}
+
+/* ============================================================ */
+/* ========================== TABLET ========================== */
+/* ============================================================ */
+@media screen and (min-width: 768px) {
+  .wrapper__h2 {
+    font-size: 3.5em;
+  }
+}
+
+/* ============================================================ */
+/* ========================== DESKTOP ========================= */
+/* ============================================================ */
+@media screen and (min-width: 992px) {
 }
