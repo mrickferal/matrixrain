@@ -43,11 +43,11 @@ const matrixRain = {
         matrixRain.katakanaCharacters +
         matrixRain.numbers;
 
-    // create an array to keep track of the current vertical position (y-coordinate) of the 'drops' in the matrix rain animation
+    // create an array to keep track of the current vertical position (y-coordinate) of the "drops" in the matrix rain animation
     // each element in the array corresponds to a column on the screen, and its value represents the y-coordinate of the character currently falling in that column
     matrixRain.drops = [];
 
-    // the index of a element represent its coordinates on the X-axis and the value of a element represent its coordinates on the Y-axis
+    // the index of an element represent its coordinates on the X-axis and the value of a element represent its coordinates on the Y-axis
     for (let index = 0; index < matrixRain.columns; index++) {
       // initially, each column has its character starting at the top of the screen
       matrixRain.drops[index] = 1;
